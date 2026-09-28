@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE REGISTRO</title>
+    <link rel="stylesheet" href="estylo.css">
+</head>
+
+<body>
+
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <p>
+        Complete la siguiente información para registrar sus datos.
+    </p>
+    <form action="proceso.php" method="post" enctype="multipart/form-data">
+
+       <!-- ================= DATOS PERSONALES ================= -->
+
+        <fieldset>
+
+            <legend>1. DATOS PERSONALES</legend>
+
+            <label for="nombre">NOMBRE:</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+            <br><br>
+
+            <label for="apellido">APELLIDOS:</label>
+            <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Ingrese sus apellidos"
+                required
+            >
+
+            <br><br>
+
+            <label for="dni">DNI:</label>
+            <input
+                type="text"
+                id="dni"
+                name="dni"
+                placeholder="Ingrese su DNI"
+                maxlength="8"
+            >
+
+            <br><br>
+
+            <label for="edad">EDAD:</label>
+            <input
+                type="number"
+                id="edad"
+                name="edad"
+                min="1"
+                max="100"
+            >
+
+            <br><br>
+
+            <label for="fecha_nacimiento">
+                FECHA DE NACIMIENTO:
+            </label>
+
+            <input
+                type="date"
+                id="fecha_nacimiento"
+                name="fecha_nacimiento"
+            >
+
+        </fieldset>
+
+        <!-- ================= GÉNERO ================= -->
+
+        <fieldset>
+
+            <legend>2. GÉNERO</legend>
+
+            <input
+                type="radio"
+                id="masculino"
+                name="genero"
+                value="masculino"
+            >
+
+            <label for="masculino">
+                MASCULINO
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="femenino"
+                name="genero"
+                value="femenino"
+            >
+
+            <label for="femenino">
+                FEMENINO
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="otro"
+                name="genero"
+                value="otro"
+            >
+
+            <label for="otro">
+                OTRO
+            </label>
+
+        </fieldset>
+
+        <!-- ================= CONTACTO ================= -->
+
+        <fieldset>
+
+            <legend>3. DATOS DE CONTACTO</legend>
+
+            <label for="correo">
+                CORREO ELECTRÓNICO:
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+
+            <br><br>
+
+            <label for="telefono">
+                TELÉFONO:
+            </label>
+
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="999 888 777"
+            >
+
+            <br><br>
+
+            <label for="telefono2">
+                TELÉFONO ALTERNATIVO:
+            </label>
+
+            <input
+                type="tel"
+                id="telefono2"
+                name="telefono2"
+                placeholder="999 888 777"
+            >
+
+            <br><br>
+
+            <label for="web">
+                SITIO WEB:
+            </label>
+
+            <input
+                type="url"
+                id="web"
+                name="web"
+                placeholder="https://www.ejemplo.com"
+            >
+
+        </fieldset>
+
+        <!-- ================= DIRECCIÓN ================= -->
+
+        <fieldset>
+
+            <legend>4. DIRECCIÓN</legend>
+
+            <label for="direccion">
+                DIRECCIÓN:
+            </label>
+
+            <input
+                type="text"
+                id="direccion"
+                name="direccion"
+                placeholder="Av. / Jr. / Calle"
+            >
+
+            <br><br>
+
+            <label for="numero">
+                NÚMERO:
+            </label>
+
+            <input
+                type="number"
+                id="numero"
+                name="numero"
+                min="1"
+            >
+
+            <br><br>
+
+            <label for="departamento">
+                DEPARTAMENTO / INTERIOR:
+            </label>
+
+            <input
+                type="text"
+                id="departamento"
+                name="departamento"
+                placeholder="Ejemplo: 302"
+            >
+
+            <br><br>
+
+            <label for="distrito">
+                DISTRITO:
+            </label>
+
+            <input
+                type="text"
+                id="distrito"
+                name="distrito"
+                placeholder="Ingrese su distrito"
+            >
+
+            <br><br>
+
+            <label for="codigo_postal">
+                CÓDIGO POSTAL:
+            </label>
+
+            <input
+                type="text"
+                id="codigo_postal"
+                name="codigo_postal"
+                placeholder="15001"
+            >
+
+        </fieldset>
+
+        <!-- ================= PAÍS ================= -->
+
+        <fieldset>
+
+            <legend>5. UBICACIÓN</legend>
+
+            <label for="pais">
+                PAÍS:
+            </label>
+
+            <select id="pais" name="pais">
+
+                <option value="">
+                    -- SELECCIONE SU PAÍS --
+                </option>
+
+                <option value="peru">PERÚ</option>
+                <option value="argentina">ARGENTINA</option>
+                <option value="bolivia">BOLIVIA</option>
+                <option value="brasil">BRASIL</option>
+                <option value="chile">CHILE</option>
+                <option value="colombia">COLOMBIA</option>
+                <option value="ecuador">ECUADOR</option>
+                <option value="mexico">MÉXICO</option>
+                <option value="panama">PANAMÁ</option>
+                <option value="paraguay">PARAGUAY</option>
+                <option value="uruguay">URUGUAY</option>
+                <option value="venezuela">VENEZUELA</option>
+                <option value="españa">ESPAÑA</option>
+                <option value="portugal">PORTUGAL</option>
+                <option value="francia">FRANCIA</option>
+                <option value="italia">ITALIA</option>
+                <option value="alemania">ALEMANIA</option>
+                <option value="reino_unido">
+                    REINO UNIDO
+                </option>
+                <option value="estados_unidos">
+                    ESTADOS UNIDOS
+                </option>
+                <option value="canada">CANADÁ</option>
+                <option value="japon">JAPÓN</option>
+                <option value="china">CHINA</option>
+                <option value="corea_sur">
+                    COREA DEL SUR
+                </option>
+                <option value="australia">
+                    AUSTRALIA
+                </option>
+                <option value="otro">
+                    OTRO
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <label for="ciudad">
+                CIUDAD:
+            </label>
+
+            <select id="ciudad" name="ciudad">
+
+                <option value="">
+                    -- SELECCIONE SU CIUDAD --
+                </option>
+
+                <option value="lima">LIMA</option>
+                <option value="arequipa">AREQUIPA</option>
+                <option value="cusco">CUSCO</option>
+                <option value="trujillo">TRUJILLO</option>
+                <option value="piura">PIURA</option>
+                <option value="chiclayo">CHICLAYO</option>
+                <option value="iquitos">IQUITOS</option>
+                <option value="huancayo">HUANCAYO</option>
+                <option value="tacna">TACNA</option>
+                <option value="puno">PUNO</option>
+                <option value="ica">ICA</option>
+                <option value="otra">
+                    OTRA CIUDAD
+                </option>
+
+            </select>
+
+        </fieldset>
+
+
+        <!-- ================= ESTADO CIVIL ================= -->
+
+        <fieldset>
+
+            <legend>6. ESTADO CIVIL</legend>
+
+            <input
+                type="radio"
+                id="soltero"
+                name="estado_civil"
+                value="soltero"
+            >
+
+            <label for="soltero">
+                SOLTERO(A)
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="casado"
+                name="estado_civil"
+                value="casado"
+            >
+
+            <label for="casado">
+                CASADO(A)
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="conviviente"
+                name="estado_civil"
+                value="conviviente"
+            >
+
+            <label for="conviviente">
+                CONVIVIENTE
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="divorciado"
+                name="estado_civil"
+                value="divorciado"
+            >
+
+            <label for="divorciado">
+                DIVORCIADO(A)
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="viudo"
+                name="estado_civil"
+                value="viudo"
+            >
+
+            <label for="viudo">
+                VIUDO(A)
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= ESTUDIOS ================= -->
+
+        <fieldset>
+
+            <legend>7. NIVEL DE ESTUDIOS</legend>
+
+            <input
+                type="radio"
+                id="primaria"
+                name="estudios"
+                value="primaria"
+            >
+
+            <label for="primaria">
+                PRIMARIA
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="secundaria"
+                name="estudios"
+                value="secundaria"
+            >
+
+            <label for="secundaria">
+                SECUNDARIA
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="tecnico"
+                name="estudios"
+                value="tecnico"
+            >
+
+            <label for="tecnico">
+                TÉCNICO
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="universitario"
+                name="estudios"
+                value="universitario"
+            >
+
+            <label for="universitario">
+                UNIVERSITARIO
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="posgrado"
+                name="estudios"
+                value="posgrado"
+            >
+
+            <label for="posgrado">
+                POSGRADO
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= INFORMACIÓN LABORAL ================= -->
+
+        <fieldset>
+
+            <legend>8. INFORMACIÓN LABORAL</legend>
+
+            <label for="ocupacion">
+                OCUPACIÓN:
+            </label>
+
+            <input
+                type="text"
+                id="ocupacion"
+                name="ocupacion"
+                placeholder="Ejemplo: Ingeniero"
+            >
+
+            <br><br>
+
+            <label for="empresa">
+                EMPRESA:
+            </label>
+
+            <input
+                type="text"
+                id="empresa"
+                name="empresa"
+                placeholder="Nombre de la empresa"
+            >
+
+            <br><br>
+
+            <label for="estado_laboral">
+                ESTADO LABORAL:
+            </label>
+
+            <select
+                id="estado_laboral"
+                name="estado_laboral"
+            >
+
+                <option value="">
+                    -- SELECCIONE --
+                </option>
+
+                <option value="empleado">
+                    EMPLEADO
+                </option>
+
+                <option value="independiente">
+                    INDEPENDIENTE
+                </option>
+
+                <option value="desempleado">
+                    DESEMPLEADO
+                </option>
+
+                <option value="estudiante">
+                    ESTUDIANTE
+                </option>
+
+                <option value="jubilado">
+                    JUBILADO
+                </option>
+
+            </select>
+
+        </fieldset>
+
+
+        <!-- ================= IDIOMAS ================= -->
+
+        <fieldset>
+
+            <legend>9. IDIOMAS</legend>
+
+            <input
+                type="checkbox"
+                id="español"
+                name="idiomas[]"
+                value="español"
+            >
+
+            <label for="español">
+                ESPAÑOL
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="ingles"
+                name="idiomas[]"
+                value="ingles"
+            >
+
+            <label for="ingles">
+                INGLÉS
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="frances"
+                name="idiomas[]"
+                value="frances"
+            >
+
+            <label for="frances">
+                FRANCÉS
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="portugues"
+                name="idiomas[]"
+                value="portugues"
+            >
+
+            <label for="portugues">
+                PORTUGUÉS
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="italiano"
+                name="idiomas[]"
+                value="italiano"
+            >
+
+            <label for="italiano">
+                ITALIANO
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="aleman"
+                name="idiomas[]"
+                value="aleman"
+            >
+
+            <label for="aleman">
+                ALEMÁN
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= AFICIONES ================= -->
+
+        <fieldset>
+
+            <legend>10. AFICIONES</legend>
+
+            <input
+                type="checkbox"
+                id="musica"
+                name="aficiones[]"
+                value="musica"
+            >
+
+            <label for="musica">
+                MÚSICA
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="deporte"
+                name="aficiones[]"
+                value="deporte"
+            >
+
+            <label for="deporte">
+                DEPORTE
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="lectura"
+                name="aficiones[]"
+                value="lectura"
+            >
+
+            <label for="lectura">
+                LECTURA
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="videojuegos"
+                name="aficiones[]"
+                value="videojuegos"
+            >
+
+            <label for="videojuegos">
+                VIDEOJUEGOS
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="viajes"
+                name="aficiones[]"
+                value="viajes"
+            >
+
+            <label for="viajes">
+                VIAJES
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="fotografia"
+                name="aficiones[]"
+                value="fotografia"
+            >
+
+            <label for="fotografia">
+                FOTOGRAFÍA
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="cocina"
+                name="aficiones[]"
+                value="cocina"
+            >
+
+            <label for="cocina">
+                COCINA
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= REDES SOCIALES ================= -->
+
+        <fieldset>
+
+            <legend>11. REDES SOCIALES</legend>
+
+            <label for="facebook">
+                FACEBOOK:
+            </label>
+
+            <input
+                type="url"
+                id="facebook"
+                name="facebook"
+                placeholder="https://facebook.com/"
+            >
+
+            <br><br>
+
+            <label for="instagram">
+                INSTAGRAM:
+            </label>
+
+            <input
+                type="url"
+                id="instagram"
+                name="instagram"
+                placeholder="https://instagram.com/"
+            >
+
+            <br><br>
+
+            <label for="linkedin">
+                LINKEDIN:
+            </label>
+
+            <input
+                type="url"
+                id="linkedin"
+                name="linkedin"
+                placeholder="https://linkedin.com/"
+            >
+
+        </fieldset>
+
+
+        <!-- ================= PREFERENCIAS ================= -->
+
+        <fieldset>
+
+            <legend>12. PREFERENCIAS DE CONTACTO</legend>
+
+            <p>
+                ¿Cómo desea recibir información?
+            </p>
+
+            <input
+                type="checkbox"
+                id="contacto_correo"
+                name="preferencias[]"
+                value="correo"
+            >
+
+            <label for="contacto_correo">
+                CORREO ELECTRÓNICO
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="contacto_telefono"
+                name="preferencias[]"
+                value="telefono"
+            >
+
+            <label for="contacto_telefono">
+                TELÉFONO
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="contacto_sms"
+                name="preferencias[]"
+                value="sms"
+            >
+
+            <label for="contacto_sms">
+                SMS
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="contacto_whatsapp"
+                name="preferencias[]"
+                value="whatsapp"
+            >
+
+            <label for="contacto_whatsapp">
+                WHATSAPP
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= NIVEL DE SATISFACCIÓN ================= -->
+
+        <fieldset>
+
+            <legend>13. SATISFACCIÓN</legend>
+
+            <label for="satisfaccion">
+                NIVEL DE SATISFACCIÓN:
+            </label>
+
+            <br>
+
+            <input
+                type="range"
+                id="satisfaccion"
+                name="satisfaccion"
+                min="1"
+                max="10"
+                value="5"
+            >
+
+            <p>
+                1 = Muy insatisfecho
+                <br>
+                10 = Muy satisfecho
+            </p>
+
+        </fieldset>
+
+
+        <!-- ================= FECHA Y HORA ================= -->
+
+        <fieldset>
+
+            <legend>14. FECHA Y HORA</legend>
+
+            <label for="hora">
+                HORA PREFERIDA:
+            </label>
+
+            <input
+                type="time"
+                id="hora"
+                name="hora"
+            >
+
+            <br><br>
+
+            <label for="fecha_registro">
+                FECHA DE REGISTRO:
+            </label>
+
+            <input
+                type="date"
+                id="fecha_registro"
+                name="fecha_registro"
+            >
+
+            <br><br>
+
+            <label for="mes">
+                MES DE INICIO:
+            </label>
+
+            <input
+                type="month"
+                id="mes"
+                name="mes"
+            >
+
+            <br><br>
+
+            <label for="semana">
+                SEMANA:
+            </label>
+
+            <input
+                type="week"
+                id="semana"
+                name="semana"
+            >
+
+        </fieldset>
+
+
+        <!-- ================= COMENTARIOS ================= -->
+
+        <fieldset>
+
+            <legend>15. COMENTARIOS</legend>
+
+            <label for="comentarios">
+                ESCRIBA SUS COMENTARIOS:
+            </label>
+
+            <br><br>
+
+            <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="7"
+                cols="60"
+                placeholder="Escriba aquí sus comentarios..."
+            ></textarea>
+
+        </fieldset>
+
+
+        <!-- ================= ARCHIVO ================= -->
+
+        <fieldset>
+
+            <legend>16. DOCUMENTO O ARCHIVO</legend>
+
+            <label for="archivo">
+                SUBIR ARCHIVO:
+            </label>
+
+            <input
+                type="file"
+                id="archivo"
+                name="archivo"
+            >
+
+        </fieldset>
+
+
+        <!-- ================= USUARIO Y CONTRASEÑA ================= -->
+
+        <fieldset>
+
+            <legend>17. CUENTA DE USUARIO</legend>
+
+            <label for="usuario">
+                NOMBRE DE USUARIO:
+            </label>
+
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Ingrese un usuario"
+            >
+
+            <br><br>
+
+            <label for="password">
+                CONTRASEÑA:
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Ingrese su contraseña"
+            >
+
+            <br><br>
+
+            <label for="password2">
+                REPETIR CONTRASEÑA:
+            </label>
+
+            <input
+                type="password"
+                id="password2"
+                name="password2"
+                placeholder="Repita su contraseña"
+            >
+
+        </fieldset>
+
+
+        <!-- ================= TÉRMINOS ================= -->
+
+        <fieldset>
+
+            <legend>18. CONFIRMACIÓN</legend>
+
+            <input
+                type="checkbox"
+                id="terminos"
+                name="terminos"
+                value="acepto"
+                required
+            >
+
+            <label for="terminos">
+                ACEPTO LOS TÉRMINOS Y CONDICIONES
+            </label>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="privacidad"
+                name="privacidad"
+                value="acepto"
+            >
+
+            <label for="privacidad">
+                ACEPTO LA POLÍTICA DE PRIVACIDAD
+            </label>
+
+        </fieldset>
+
+
+        <!-- ================= BOTONES ================= -->
+
+        <br>
+
+        <input
+            type="submit"
+            value="ENVIAR FORMULARIO"
+        >
+
+        <input
+            type="reset"
+            value="LIMPIAR FORMULARIO"
+        >
+
+    </form>
+
+</body>
+
+</html>
